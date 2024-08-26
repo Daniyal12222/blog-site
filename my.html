@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My blog</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <script type="module" src="./homepage.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container flex p-3 items-center justify-between container1">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                
+                <li><a href="#">About</a></li>
+                <li><a href="my.html">My Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><h1 class="bg-blue-400 hidden w-[40px] h-[40px] text-center p-1 text-white rounded-3xl " id="User"></h1></li>
+                <li><img class="w-[40px] hidden"  id="logout" src="img/log-out_10024482.png" alt=""></li>
+
+                 
+                
+                
+            </ul>
+            
+            <h1 class="logo font-serif">Blog</h1>
+        </div>
+    </nav>
+    <!-- <button id="my_blog" class="w-[60px] pen" ><img src="img/ballpoint_7726983.png" alt=""></button> -->
+    <div class="w-full p-3 min-h-[87vh] flex flex-col items-center gap-6 bg-blue-200" id="box_my">
+       
+    </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="my.js"></script>
+    <!-- <script type="module" src="firebaseauth.js"></script> -->
+</body>
+</html>
